@@ -12,14 +12,30 @@ body {
   font-family: 'Play', sans-serif;
   min-height: 100vh;
   line-height: 1.6;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url('./img/bg.jpg') center center / cover no-repeat;
+  overflow: hidden;
 }
 button {
   font-family: inherit;
+}
+h4 {
+  max-width: 200px;
+  margin: 15px auto;
+  padding: 5px 15px;
+  border: 1px solid #008793;
+  border-radius: 25px;
+}
+li,
+div,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* APP */
@@ -28,21 +44,26 @@ button {
   max-width: 500px;
   background: rgba(0,0,0,0.8);
   color: white;
-  padding: 35px;
+  padding: 50px;
   text-align: center;
   border-radius: 5px;
-  margin: 0 5px;
+  margin: 3px;
 }
 .app h1 {
   position: relative;
   font-size: 1.1rem;
-  margin-bottom: 45px;
-  padding: 10px;
-  border-radius: 5px;
-  text-shadow: 2px 2px 2px #004d7a;
-  background: #00F260;
-  background: -webkit-linear-gradient(to right, #0575E6, #00F260); 
-  background: linear-gradient(to right, #0575E6, #00F260);
+  margin-bottom: 35px;
+  padding: 8px;
+  border-radius: 25px;
+  text-shadow: 1px 1px 5px black;
+  background-image: linear-gradient(
+    to right top, 
+    #051937, 
+    #004d7a, 
+    #008793, 
+    #00bf72, 
+    #a8eb12
+  );
 }
 .app h1 span {
   color: white;
@@ -53,9 +74,9 @@ button {
   cursor: pointer;
 }
 .app #rangenum-output {
-  width: 35px;
-  height: 35px;
-  margin: 15px auto;
+  width: 40px;
+  height: 40px;
+  margin: 25px auto;
   background-image: linear-gradient(
     to right top, 
     #051937, 
@@ -75,8 +96,8 @@ button {
 .app input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
-  width: 98%;
-  height: 7px;
+  width: 95%;
+  height: 10px;
   background-image: linear-gradient(
     to right top, 
     #051937, 
@@ -98,20 +119,20 @@ button {
 .app input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background: #04AA6D;
   cursor: pointer;
 }
 .app .checkboxs {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .app input[type="checkbox"] {
   display: none;
 }
 .app input[type="checkbox"]:checked + label {
-  transform: scale(1.2);
+  transform: scale(1.1);
   filter: brightness(150%);
   background-image: linear-gradient(
     to right top, 
@@ -122,23 +143,23 @@ button {
     #a8eb12
   );
   color: white;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 2px black;
 }
 .app label[for="lowercase"],
 .app label[for="uppercase"],
 .app label[for="numerics"],
 .app label[for="symbols"] {
-  user-select: none;
-  background-color: #ddd;
-  color: black;
   display: inline-block;
+  color: black;
   width: 40px;
-  height: 28px;
+  height: 40px;
   border-radius: 50%;
   font-weight: 700;
-  margin: 15px;
+  margin: 5px 5px;
   cursor: pointer;
-  border: 1px solid #004d7a;
+  line-height: 2.1;
+  background-color: #ddd;
+  border: 2px solid #008793;
 }
 .app #generateBtn {
   padding: 10px 35px;
@@ -154,6 +175,6 @@ button {
   );
   border: none;
   color: whitesmoke;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
 }

@@ -65,7 +65,7 @@ window.addEventListener('load', () => {
       generatePassword();
     } else {
       outputGenpass.style.background = "#c31432";
-      outputGenpass.textContent = "* Secures Options Required"
+      outputGenpass.textContent = "Secures Options Required"
     }
   })
 
