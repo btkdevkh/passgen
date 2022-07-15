@@ -21,8 +21,7 @@ const genertateSecureOption = (secureOption, passLength) => {
     x.push(secureOption[y]);
   }
 
-  const generatedOptions = new Set(x);
-  return Array.from(generatedOptions).join('');  
+  return x.join('');  
 }
 
 const generatePassword = () => {
